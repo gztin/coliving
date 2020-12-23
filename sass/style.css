@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 65px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  position: fixed;
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+}
+
+.navbar-brand {
+  width: 200px;
+  padding: 0px;
+  padding-left: 15px;
+}
+
+.navbar-brand .logoPic {
+  width: 100%;
+}
+
+.container-fluid {
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.block_headerView {
+  height: 700px;
+  background-image: url(../img/block_background_pic/bg_service.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.title_productName {
+  width: 550px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 35%;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 3px 5px #444;
+  font-size: 4em;
+  font-family: "Apple LiGothic Medium", 微軟正黑體, "Adobe 繁黑體 Std B", Arial, Helvetica, sans-serif;
+}
+
+.title_slogan {
+  height: 40px;
+  padding-top: 15%;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 1px 3px 5px #444;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.show_product {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.doom-advantage {
+  text-align: center;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
+
+.doom-advantage .advantage-option {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #3bccd6;
+}
+
+.doom-advantage .advantage-option .advantage-title {
+  font-weight: bold;
+}
+
+.doom-advantage .advantage-option .advantage-contain {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.doom-advantage .advantage-option .thumbnail {
+  border: none;
+  background: transparent;
+}
+
+.doom-inf {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
+
+.doom-inf .jumbotron {
+  margin-top: 20px;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+
+.doom-inf .doom-content {
+  margin: 20px;
+}
+
+.doom-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 35px;
+}
+
+.doom-content .doom-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doom-content .doom-item-header .hint {
+  margin-left: 50px;
+  margin-bottom: 35px;
+}
+
+.doom-content .doom-item-header .hint i {
+  margin-left: 10px;
+  color: #3bccd6;
+}
+
+.doom-content .doom-item-header .hint span {
+  margin-left: 10px;
+}
+
+.doom-style ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.doom-style ul li {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.doom-item {
+  margin-bottom: 35px;
+}
+
+.doom-item ul li {
+  margin-top: 20px;
+}
+
+.doom-item ul li i {
+  color: #3bccd6;
+}
+
+.doom-item ul li span {
+  margin-left: 10px;
+}
+
+.room-option .advantage-option ul li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.doom-content .booking {
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.doom-content .booking .booking-link {
+  font-weight: bold;
+}
+
+.block_footer {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  .container-fluid {
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .container-fluid .navbar-header {
+    width: 100%;
+  }
+  .container-fluid .downMenu {
+    margin-top: 240px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: #fefefe;
+  }
+  .block_headerView {
+    height: 550px;
+  }
+  .block_headerView .show_product {
+    width: 100%;
+    top: 20%;
+    left: 0%;
+    position: absolute;
+  }
+  .block_headerView .show_product .title_productName {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+  }
+  .block_headerView .show_product .title_slogan {
+    font-size: 2em;
+    padding-top: 25%;
+  }
+  .doom-advantage {
+    display: block;
+  }
+  .doom-advantage .advantage-option:nth-child(1) {
+    margin-top: 15%;
+  }
+  .doom-content {
+    margin-bottom: 0px;
+  }
+  .doom-content .doom-item-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .doom-content .doom-item-header .hint {
+    margin-left: 0px;
+  }
+  .doom-content p {
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  .block-title {
+    font-size: 1.5em !important;
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  .doom-content .doom-item {
+    margin-bottom: 0px;
+  }
+  .doom-content .doom-item:nth-child(4) {
+    margin-bottom: 35px;
+  }
+  .doom-content .doom-item-header .hint {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .doom-content .doom-item-header .hint span {
+    margin-left: 0px;
+    line-height: 2em;
+  }
+  .doom-content .doom-item-header .hint i {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

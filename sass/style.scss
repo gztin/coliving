@@ -1,0 +1,300 @@
+@import 'reset';
+$font25em:2.5em;
+$fullwidth: 100%;
+$white: #fff;
+$mainColor:#3bccd6;
+$white80: rgba(255, 255, 255, 0.8);
+$shadow: 1px 3px 5px #444;
+$font: "Apple LiGothic Medium", 微軟正黑體, "Adobe 繁黑體 Std B", Arial, Helvetica, sans-serif;
+@mixin rwd-block {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin:0 auto;
+}
+@mixin jumbotron {
+    margin-top:20px;
+    border-radius: 8px;
+    margin-bottom: 0px;
+    background-color: $white;
+}
+body{
+    background: #F5F5F5;
+}
+img{
+    width:100%;
+}
+hr{
+    width:100%;
+}
+.navbar {
+    width: 100%;
+    height: 65px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    position: fixed;
+}
+    
+
+.navbar-default {
+    background: transparent;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+} 
+
+.navbar-brand {
+    width: 200px;
+    padding: 0px;
+    padding-left: 15px;
+
+    .logoPic {
+        width: 100%;
+    } 
+}
+       
+.container-fluid {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: $white80;
+}
+    
+.block_headerView {
+    height: 700px;
+    background-image: url(../img/block_background_pic/bg_service.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+    
+    
+.title_productName{
+    width: 550px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35%;
+    color: $white;
+    font-weight: bold;
+    text-shadow: $shadow;
+    font-size: 4em;
+    font-family: $font;
+}
+    
+.title_slogan{
+    height: 40px;
+    padding-top: 15%;
+    color: $white;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: $shadow;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.show_product {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.doom-advantage{
+    text-align: center;
+    padding-top:100px;
+    @include rwd-block();
+    .advantage-option{
+        padding-left: 5%;
+        padding-right: 5%;
+        color:$mainColor;
+        .advantage-title{
+            font-weight:bold;
+        }
+        .advantage-contain{
+            padding-top: 10px;
+            font-weight:bold;
+        }
+        .thumbnail{
+            border:none;
+            background: transparent;
+        }
+    }
+}
+.doom-inf{
+    flex-direction: column;
+    @include rwd-block();
+    .jumbotron{
+        @include jumbotron();
+    }
+    .doom-content{
+        margin:20px;
+    }
+}
+
+.doom-content{
+    h2{
+        font-size: 2.5em;
+        margin-bottom: 35px;
+    }
+}
+
+.doom-content{
+    .doom-item-header{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        .hint{
+            margin-left: 50px;
+            margin-bottom: 35px;
+            i{
+                margin-left: 10px;
+                color: #3bccd6;
+            }
+            span{
+                margin-left: 10px;
+            }
+        }
+    }   
+}
+
+.doom-style{
+    ul{
+        display:flex;
+        li{
+            margin-top: 20px;
+            padding: 5px;
+        }
+    }
+}
+.doom-item{
+    margin-bottom: 35px;
+    ul{
+        li{
+            margin-top: 20px;
+            i{
+                color: #3bccd6;
+            }
+            span{
+                margin-left: 10px;
+            } 
+        }
+    }
+}
+
+.room-option{
+    .advantage-option{
+        ul{
+            li{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.doom-content{
+    .booking{
+        text-align: justify;
+        line-height: 1.5em;
+        .booking-link{
+            font-weight: bold;
+        }
+    }
+}
+
+.block_footer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+    .container-fluid {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white80;
+        .navbar-header{
+            width:100%;
+        }
+        .downMenu{
+            margin-top: 240px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            background: #fefefe;
+        }
+    }
+    .block_headerView{
+        height:550px;
+        .show_product{
+            width: 100%;
+            top:20%;
+            left:0%;
+            position: absolute;
+            .title_productName{
+                width:100%;
+                text-align: center;
+                font-size: 3em;;
+            }
+            .title_slogan{
+                font-size: 2em;
+                padding-top: 25%;
+            }
+        }
+    }
+    .doom-advantage{
+        display: block;
+        .advantage-option:nth-child(1){
+            margin-top:15%;
+        }
+    }
+    .doom-content {
+        margin-bottom: 0px;
+        .doom-item-header{
+            flex-direction: column;
+            .hint{
+                margin-left: 0px;
+            }
+        }
+        p{
+            line-height: 1.5em;
+            text-align: justify;
+        }
+    }
+    .block-title{
+        font-size: 1.5em!important;
+        text-align: center;
+        margin-bottom: 20px!important;
+    }
+    .doom-content{
+        .doom-item{
+            margin-bottom: 0px;
+        }
+        .doom-item:nth-child(4){
+            margin-bottom: 35px;
+        }
+        .doom-item-header{
+            .hint{
+                display: flex;
+                flex-direction: column;
+                span{
+                    margin-left:0px;
+                    line-height: 2em;
+                }
+                i{
+                    margin-right:10px;
+                }
+            }
+        }
+    }
+}
+  
