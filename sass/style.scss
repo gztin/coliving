@@ -216,7 +216,7 @@ canvas {
     justify-content: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
     .container-fluid {
         height: 65px;
         display: flex;
@@ -281,13 +281,15 @@ canvas {
         .doom-item{
             margin-bottom: 0px;
         }
-        .doom-item:nth-child(4){
+        .doom-item:nth-child(4),
+        .doom-item:nth-child(10){
             margin-bottom: 35px;
         }
         .doom-item-header{
             .hint{
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 0px;
                 span{
                     margin-left:0px;
                     line-height: 2em;
@@ -298,5 +300,17 @@ canvas {
             }
         }
     }
+    .doom-item{
+        ul{
+            li{
+                span{
+                    font-size:14px;
+                }
+            }
+        }
+    }
+    iframe{
+        margin-top:20px;
+    } 
 }
   
