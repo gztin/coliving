@@ -140,6 +140,7 @@ canvas {
 .doom-content{
     h2{
         font-size: 2.5em;
+        color:$mainColor;
         margin-bottom: 35px;
     }
 }
@@ -273,6 +274,7 @@ canvas {
     .block-title{
         font-size: 1.5em!important;
         text-align: center;
+        color:$mainColor;
         margin-bottom: 20px!important;
     }
     .doom-content{
